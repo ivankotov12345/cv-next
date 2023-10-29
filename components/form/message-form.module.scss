@@ -1,0 +1,29 @@
+@use '@/scss/' as *;
+
+.message_form {
+  width: 70%;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    width: 80%;
+  }
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+}
+.message_button_wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  @media (max-width: 900px) {
+    margin-top: 15px;
+  }
+  @media (max-width: 710px) {
+    margin-top: 0;
+  }
+}
+.message_form_button {
+  @include button;
+}

@@ -1,0 +1,10 @@
+@use '@/scss/' as *;
+
+.slider_wrapper {
+  min-height: $section-height;
+  position: relative;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+}
+

@@ -1,0 +1,25 @@
+@use '@/scss/' as *;
+
+.skills_wrapper {
+  @include section-wrapper;
+  row-gap: 100px;
+  @media (max-width: 880px) {
+    row-gap: 30px;
+  }
+}
+
+.title_skills {
+  text-transform: uppercase;
+  @include section-title;
+}
+
+.skills_list {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(4, 1fr);
+  justify-items: center;
+  padding: 0;
+  @include list;
+  @media (max-width: 880px) {
+    grid-template: repeat(4, 1fr) / 1fr 1fr;
+  }
+}

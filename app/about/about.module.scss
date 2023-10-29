@@ -1,0 +1,59 @@
+@use '@/scss/' as *;
+
+.about_wrapper {
+  row-gap: 100px;
+  @include section-wrapper;
+  @media (max-width: 760px) {
+    row-gap: 30px;
+  }
+}
+
+.title_about {
+  text-transform: uppercase;
+  @include section-title;
+}
+
+.text {
+  font-size: $size-small;
+  text-align: center;
+  @include text-regular;
+  @media (max-width: 760px) {
+    font-size: $size-very-small;
+  }
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  .column {
+    h3 {
+      text-transform: uppercase;
+      @include text-shadowed;
+      white-space: nowrap;
+      @media (max-width: 370px) {
+        font-size: $size-very-small;
+      }
+    }
+    
+    p {
+      @include text-regular;
+    }
+
+    ul {
+      padding: 0;
+      @include list;
+      font-size: $size-very-small;
+      @media (max-width: 760px) {
+        font-size: $size-very-small;
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    h3, p {
+      text-align: center;
+    }
+  }
+}

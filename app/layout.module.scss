@@ -1,0 +1,12 @@
+@use '@/scss/' as *;
+
+.body {
+  margin: 0;
+  background-color: $color-black;
+}
+
+.main {
+  @include block-position;
+  overflow-x: hidden;
+  min-height: $section-height;
+}

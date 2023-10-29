@@ -1,0 +1,44 @@
+@use '@/scss/' as *;
+.mantine-TextInput-root {
+  position: relative;
+  height: 85px;
+  @media (max-width: 900px) {
+    height: 80px;
+  }
+
+  @media (max-width: 710px) {
+    height: 70px;
+  }
+}
+
+.mantine-TextInput-error {
+  position: relative;
+}
+
+.mantine-TextInput-label,
+.mantine-Textarea-label {
+  @include text-regular;
+  text-transform: uppercase;
+}
+
+.mantine-Textarea-root {
+  height: 105px;
+}
+
+.mantine-Textarea-root {
+  position: relative;
+}
+
+.mantine-TextInput-input,
+.mantine-Textarea-input {
+  &:focus {
+    border-color: $color-blue;
+  }
+
+}
+
+.mantine-TextInput-input {
+  @media (max-width: 900px) {
+    height: 30px;
+  }
+}

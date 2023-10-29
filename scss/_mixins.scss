@@ -1,0 +1,92 @@
+@use './vars' as *;
+
+@mixin block-position {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin header-footer {
+  height: $height-header-footer;
+  display: flex;
+  align-items: center;
+}
+
+@mixin header-footer-outer {
+  margin: 0 20px;
+  width: 100%;
+}
+
+@mixin text-regular {
+  color: $color-grey-100;
+  cursor: default;
+  user-select: none;
+}
+
+@mixin text-shadowed {
+  text-shadow: -2px 0 0 $color-text-shadow;
+  @include text-regular;
+}
+
+@mixin section-wrapper {
+  margin: 0 20px;
+  display: flex;
+  height: $section-height;
+  padding-bottom: 10vh;
+  flex-direction: column;
+  @media (max-width: 500px) {
+    margin: 0 10px;
+  }
+}
+
+@mixin list {
+  list-style-type: none;
+  @include text-regular;
+  font-size: $size-normal;
+  @media (max-width: 760px) {
+    font-size: $size-small;
+  }
+}
+
+
+@mixin section-title {
+  font-size: $size-big;
+  text-align: center;
+  @include text-shadowed;
+  margin: 20px 0;
+  @media (max-width: 760px) {
+    font-size: $size-normal;
+    margin: 10px 0;
+  }
+}
+
+@mixin button {
+  @include text-regular;
+  text-transform: uppercase;
+  background-color: $color-blue;
+  color: $color-black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    box-shadow: $shadow-blue;
+  }
+
+  @media (max-width: 900px) {
+    height: 30px;
+  }
+}
+
+@mixin arrow-button {
+  font-size: $size-normal;
+  color: $color-blue;
+  background: none;
+  cursor: pointer;
+  border: none;
+
+  &:hover{
+    text-shadow: $shadow-blue;
+  }
+}
