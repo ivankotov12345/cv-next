@@ -14,6 +14,8 @@ export default function Header() {
   const screenWidth = useScreenWidth();
   const [isOpened, setIsOpened] = useState<boolean>(false);
 
+  console.log(screenWidth);
+
   const burgerBtnRef = useRef<HTMLButtonElement>(null);
 
   const toggleBurgerMenu = () => {

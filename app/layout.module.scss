@@ -3,10 +3,11 @@
 .body {
   margin: 0;
   background-color: $color-black;
+  position: relative;
+  overflow: hidden;
 }
 
 .main {
   @include block-position;
-  overflow-x: hidden;
   min-height: $section-height;
 }
