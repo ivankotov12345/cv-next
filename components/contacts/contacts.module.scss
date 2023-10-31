@@ -17,6 +17,9 @@
   @media (max-width: 710px) {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    @media (orientation: landscape) {
+      display: block;
+    }
   }
 }
 
@@ -39,6 +42,11 @@
     grid-template: repeat(5, 1fr) / 1fr;
     border-right: 2px solid $color-grey-100;
     border-bottom: none;
+    @media (orientation: landscape) {
+      grid-template: 1fr / repeat(5, 1fr);
+      border-right: none;
+      border-bottom: 2px solid $color-grey-100;
+    }
   }
 }
 
@@ -64,6 +72,10 @@
       text-align: start;
       padding-left: 20px;
       font-size: $size-table-mobile;
+    }
+    @media (orientation: landscape) {
+      grid-template: 1fr / repeat(5, 1fr);
+      padding-left: 0;
     }
   }
 }

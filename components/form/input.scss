@@ -23,6 +23,12 @@
 
 .mantine-Textarea-root {
   height: 105px;
+  @media (max-width: 800px) {
+    @media (orientation: landscape) {
+      height: 95px;
+      grid-area: c;
+    }
+  }
 }
 
 .mantine-Textarea-root {
@@ -34,7 +40,6 @@
   &:focus {
     border-color: $color-blue;
   }
-
 }
 
 .mantine-TextInput-input {

@@ -17,6 +17,9 @@
 
   @media(max-width: 820px) {
     font-size: $size-small;
+    @media (orientation: landscape) {
+      font-size: $size-table-mobile;
+    }
   }
 
   @media(max-width: 500px) {
