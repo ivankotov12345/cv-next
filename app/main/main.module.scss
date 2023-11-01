@@ -13,7 +13,6 @@
     padding-bottom: 20vh;
     @media (orientation: landscape) {
       grid-template: 1fr / 1.2fr 1fr;
-      padding-bottom: 10vh;
       column-gap: 20px;
     }
   }
