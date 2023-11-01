@@ -37,6 +37,11 @@
       text-transform: uppercase;
       @include text-shadowed;
       white-space: nowrap;
+      @media (max-width: 760px) {
+        @media (orientation: landscape) {
+          font-size: $size-very-small;
+        }
+      }
       @media (max-width: 370px) {
         font-size: $size-very-small;
       }

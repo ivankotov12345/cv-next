@@ -59,6 +59,9 @@
   @media (max-width: 760px) {
     font-size: $size-normal;
     margin: 10px 0;
+    @media (orientation: landscape) {
+      margin: 5px 0;
+    }
   }
 }
 
