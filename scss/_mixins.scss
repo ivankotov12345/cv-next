@@ -44,6 +44,9 @@
   font-size: $size-normal;
   @media (max-width: 760px) {
     font-size: $size-small;
+    @media (orientation: landscape) {
+      font-size: $size-very-small;
+    }
   }
 }
 

@@ -5,6 +5,9 @@
   row-gap: 100px;
   @media (max-width: 880px) {
     row-gap: 30px;
+    @media (orientation: landscape) {
+      row-gap: 10px;
+    }
   }
 }
 

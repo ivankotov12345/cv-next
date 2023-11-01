@@ -22,6 +22,9 @@
   @include text-regular;
   @media (max-width: 760px) {
     font-size: $size-very-small;
+    @media (orientation: landscape) {
+      font-size: $size-table-mobile;
+    }
   }
 }
 
@@ -41,6 +44,11 @@
     
     p {
       @include text-regular;
+      @media (max-width: 760px) {
+        @media (orientation: landscape) {
+          font-size: $size-table-mobile;
+        }
+      }
     }
 
     ul {
@@ -49,6 +57,9 @@
       font-size: $size-very-small;
       @media (max-width: 760px) {
         font-size: $size-very-small;
+        @media (orientation: landscape) {
+          font-size: $size-table-mobile;
+        }
       }
     }
   }

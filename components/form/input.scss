@@ -11,6 +11,14 @@
   }
 }
 
+.mantine-InputWrapper-label {
+  @media (max-width: 900px) {
+    @media (orientation: landscape) {
+      font-size: $size-table-mobile;
+    }
+  }
+}
+
 .mantine-TextInput-error {
   position: relative;
 }

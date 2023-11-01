@@ -72,10 +72,12 @@
       text-align: start;
       padding-left: 20px;
       font-size: $size-table-mobile;
+      @media (orientation: landscape) {
+        padding-left: 0;
+      }
     }
     @media (orientation: landscape) {
       grid-template: 1fr / repeat(5, 1fr);
-      padding-left: 0;
     }
   }
 }
