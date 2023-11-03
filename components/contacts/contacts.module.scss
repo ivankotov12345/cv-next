@@ -30,8 +30,12 @@
     font-size: $size-small;
     font-weight: $font-weight-medium;
     text-transform: uppercase;
+    @media (max-width: 800px) {
+      @media (orientation: landscape) {
+        font-size: $size-table-mobile;
+      }
+    }
     @media (max-width: 710px) {
-      font-size: $size-very-small;
       text-align: start;
       font-size: $size-table-mobile;
     }
@@ -64,7 +68,11 @@
       }
     }
   }
-
+  @media (max-width: 800px) {
+    @media (orientation: landscape) {
+      font-size: $size-table-mobile;
+    }
+  }
   @media (max-width: 710px) {
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr;

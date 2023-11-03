@@ -29,6 +29,15 @@
   text-transform: uppercase;
 }
 
+.mantine-Input-wrapper,
+.mantine-Textarea-root {
+  @media (max-width: 750px) {
+    @media (orientation: landscape) {
+      margin-bottom: 1px;
+    }
+  }
+}
+
 .mantine-Textarea-root {
   height: 105px;
   @media (max-width: 800px) {

@@ -2,12 +2,6 @@
 
 .contacts_wrapper {
   @include section-wrapper;
-  @media (max-width: 800px) {
-    @media (orientation: landscape) {
-      height: 80vh;
-      overflow: scroll;
-    }
-  }
 }
 
 .title_contacts {
@@ -16,7 +10,7 @@
   @media (max-width: 900px) {
     margin: 10px 0;
     @media (orientation: landscape) {
-      margin: 5px 0;
+      margin: 0;
     }
   }
 }
