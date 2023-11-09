@@ -13,10 +13,8 @@ import styles from './navigation.module.scss';
 import 'swiper/css';
 import './swiper.scss';
 
-
-
 export default function Navigation({ isOpened, setIsOpened, burgerBtnRef }: NavigationPropsType) {
-  const { controlledSwiper, } = useContext(Context);
+  const { controlledSwiper } = useContext(Context);
 
   const navRef = useRef<HTMLUListElement>(null);
 

@@ -1,10 +1,18 @@
 @use '@/scss/' as *;
 
 .slider_wrapper {
-  min-height: $section-height;
   position: relative;
   touch-action: none;
   display: flex;
   align-items: center;
+}
+
+.swiper {
+  @media(max-width: 800px) {
+    @media (orientation: landscape) {
+      height: 80vh;
+      overflow-y: scroll;
+    }
+  }
 }
 

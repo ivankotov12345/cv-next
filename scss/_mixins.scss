@@ -36,6 +36,11 @@
   @media (max-width: 500px) {
     margin: 0 10px;
   }
+  @media(max-width: 800px) {
+    @media (orientation: landscape) {
+      height: 80vh;
+    }
+  }
 }
 
 @mixin list {

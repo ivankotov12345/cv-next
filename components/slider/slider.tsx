@@ -45,6 +45,7 @@ export default function Slider ({ children }: {children: React.ReactNode}) {
         slidesPerView={1}
         onSlideChange={(swiper: SwiperClass) => handleChangeSlide(swiper)}
         onSwiper={setControlledSwiper}
+        className={styles.swiper}
         >
 
       { routesArr.map(node => (
