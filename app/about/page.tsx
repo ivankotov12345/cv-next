@@ -11,7 +11,7 @@ export default function About() {
       <div className={styles.table}>
         <div className={styles.column}>
           <h3>Location</h3>
-          <p>Belarus, Mogilev</p>
+          <p>Belarus, Mogilev, Minsk</p>
         </div>
 
         <div className={styles.column}>
