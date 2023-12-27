@@ -81,8 +81,10 @@
   width: 120px;
   height: 40px;
   transition: all .3s ease-in-out;
-  &:hover {
-    box-shadow: $shadow-blue;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: $shadow-blue;
+    }
   }
 
   @media (max-width: 900px) {
@@ -96,8 +98,9 @@
   background: none;
   cursor: pointer;
   border: none;
-
-  &:hover{
-    text-shadow: $shadow-blue;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover{
+      text-shadow: $shadow-blue;
+    }
   }
 }

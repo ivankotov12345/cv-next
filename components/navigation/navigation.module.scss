@@ -38,8 +38,10 @@
         color: $color-blue;
         font-weight: $font-weight-bold;
         transition: all .2s ease-in-out;
-        &:hover {
-          text-shadow: $shadow-blue;
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            text-shadow: $shadow-blue;
+          }
         }
     }
   }
